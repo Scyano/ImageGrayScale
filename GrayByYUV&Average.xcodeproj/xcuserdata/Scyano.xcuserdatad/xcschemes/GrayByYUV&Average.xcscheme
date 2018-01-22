@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "003764C91CAD691100FD2F95"
-               BuildableName = "GrayByLUV&amp;Average.app"
-               BlueprintName = "GrayByLUV&amp;Average"
-               ReferencedContainer = "container:GrayByLUV&amp;Average.xcodeproj">
+               BuildableName = "GrayByYUV&amp;Average.app"
+               BlueprintName = "GrayByYUV&amp;Average"
+               ReferencedContainer = "container:GrayByYUV&amp;Average.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "003764C91CAD691100FD2F95"
-            BuildableName = "GrayByLUV&amp;Average.app"
-            BlueprintName = "GrayByLUV&amp;Average"
-            ReferencedContainer = "container:GrayByLUV&amp;Average.xcodeproj">
+            BuildableName = "GrayByYUV&amp;Average.app"
+            BlueprintName = "GrayByYUV&amp;Average"
+            ReferencedContainer = "container:GrayByYUV&amp;Average.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "003764C91CAD691100FD2F95"
-            BuildableName = "GrayByLUV&amp;Average.app"
-            BlueprintName = "GrayByLUV&amp;Average"
-            ReferencedContainer = "container:GrayByLUV&amp;Average.xcodeproj">
+            BuildableName = "GrayByYUV&amp;Average.app"
+            BlueprintName = "GrayByYUV&amp;Average"
+            ReferencedContainer = "container:GrayByYUV&amp;Average.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "003764C91CAD691100FD2F95"
-            BuildableName = "GrayByLUV&amp;Average.app"
-            BlueprintName = "GrayByLUV&amp;Average"
-            ReferencedContainer = "container:GrayByLUV&amp;Average.xcodeproj">
+            BuildableName = "GrayByYUV&amp;Average.app"
+            BlueprintName = "GrayByYUV&amp;Average"
+            ReferencedContainer = "container:GrayByYUV&amp;Average.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

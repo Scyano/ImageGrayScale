@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="678-ou-wWE">
+                                <rect key="frame" x="60" y="100" width="255" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="678-ou-wWE" secondAttribute="height" multiplier="15:10" id="Srg-UQ-kLV"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHX-P4-iIk">
+                                <rect key="frame" x="60" y="310" width="255" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tSd-BA-Awi">
+                                <rect key="frame" x="60" y="310" width="255" height="170"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-oe-WUQ">
+                                <rect key="frame" x="151" y="500" width="74" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0rO-ig-eVc"/>
+                                    <constraint firstAttribute="width" constant="100" id="o42-G2-iwE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="GrayScale"/>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="o42-G2-iwE"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="beginGrayScaleImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SYT-bc-K5v"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tSd-BA-Awi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="FaR-L4-eK9"/>
+                            <constraint firstItem="tSd-BA-Awi" firstAttribute="height" secondItem="678-ou-wWE" secondAttribute="height" id="GIi-wG-Edg"/>
+                            <constraint firstItem="tSd-BA-Awi" firstAttribute="width" secondItem="678-ou-wWE" secondAttribute="width" id="Jol-qj-kRx"/>
+                            <constraint firstItem="tSd-BA-Awi" firstAttribute="top" secondItem="678-ou-wWE" secondAttribute="bottom" constant="40" id="NKO-DM-yl2"/>
+                            <constraint firstItem="678-ou-wWE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="bL2-Kr-Sun"/>
+                            <constraint firstItem="FHX-P4-iIk" firstAttribute="height" secondItem="tSd-BA-Awi" secondAttribute="height" id="cVM-zn-9gq"/>
+                            <constraint firstItem="FHX-P4-iIk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="cWg-WP-u5d"/>
+                            <constraint firstItem="Ssf-oe-WUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dPH-gG-vEr"/>
+                            <constraint firstItem="Ssf-oe-WUQ" firstAttribute="top" secondItem="tSd-BA-Awi" secondAttribute="bottom" constant="20" id="hKS-RJ-qHN"/>
+                            <constraint firstAttribute="trailing" secondItem="678-ou-wWE" secondAttribute="trailing" constant="60" id="iaf-dM-1K5"/>
+                            <constraint firstItem="FHX-P4-iIk" firstAttribute="width" secondItem="tSd-BA-Awi" secondAttribute="width" id="lNr-b1-6eJ"/>
+                            <constraint firstItem="tSd-BA-Awi" firstAttribute="top" secondItem="678-ou-wWE" secondAttribute="bottom" constant="40" id="lxz-1x-auJ"/>
+                            <constraint firstItem="678-ou-wWE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="oJO-4c-3UG"/>
+                            <constraint firstItem="tSd-BA-Awi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="s7g-JC-2Nj"/>
+                            <constraint firstItem="FHX-P4-iIk" firstAttribute="top" secondItem="678-ou-wWE" secondAttribute="bottom" constant="40" id="v2G-mF-ALZ"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="effectBackView" destination="FHX-P4-iIk" id="5OG-jM-Dpt"/>
+                        <outlet property="effectImage" destination="tSd-BA-Awi" id="eJh-GP-0ko"/>
+                        <outlet property="grayScaleBtn" destination="Ssf-oe-WUQ" id="qV8-7C-Exx"/>
+                        <outlet property="sourceImage" destination="678-ou-wWE" id="g91-kB-BF6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="287.5" y="319.5"/>
         </scene>
     </scenes>
 </document>

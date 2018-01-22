@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0036ED311CAE025F001FFD0E /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0036ED301CAE025F001FFD0E /* sample.jpg */; };
 		003764CF1CAD691100FD2F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 003764CE1CAD691100FD2F95 /* main.m */; };
 		003764D21CAD691100FD2F95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 003764D11CAD691100FD2F95 /* AppDelegate.m */; };
 		003764D51CAD691100FD2F95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003764D41CAD691100FD2F95 /* ViewController.m */; };
 		003764D81CAD691100FD2F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003764D61CAD691100FD2F95 /* Main.storyboard */; };
 		003764DA1CAD691100FD2F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003764D91CAD691100FD2F95 /* Assets.xcassets */; };
 		003764DD1CAD691100FD2F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003764DB1CAD691100FD2F95 /* LaunchScreen.storyboard */; };
+		003764E61CAD695800FD2F95 /* UIImage+GrayScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 003764E51CAD695800FD2F95 /* UIImage+GrayScale.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		003764CA1CAD691100FD2F95 /* GrayByLUV&Average.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GrayByLUV&Average.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0036ED301CAE025F001FFD0E /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
+		003764CA1CAD691100FD2F95 /* GrayByYUV&Average.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GrayByYUV&Average.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		003764CE1CAD691100FD2F95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		003764D01CAD691100FD2F95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		003764D11CAD691100FD2F95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,8 @@
 		003764D91CAD691100FD2F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		003764DC1CAD691100FD2F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003764DE1CAD691100FD2F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003764E41CAD695800FD2F95 /* UIImage+GrayScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GrayScale.h"; sourceTree = "<group>"; };
+		003764E51CAD695800FD2F95 /* UIImage+GrayScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GrayScale.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +47,7 @@
 		003764C11CAD691100FD2F95 = {
 			isa = PBXGroup;
 			children = (
-				003764CC1CAD691100FD2F95 /* GrayByLUV&Average */,
+				003764CC1CAD691100FD2F95 /* GrayByYUV&Average */,
 				003764CB1CAD691100FD2F95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,24 +55,28 @@
 		003764CB1CAD691100FD2F95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				003764CA1CAD691100FD2F95 /* GrayByLUV&Average.app */,
+				003764CA1CAD691100FD2F95 /* GrayByYUV&Average.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		003764CC1CAD691100FD2F95 /* GrayByLUV&Average */ = {
+		003764CC1CAD691100FD2F95 /* GrayByYUV&Average */ = {
 			isa = PBXGroup;
 			children = (
 				003764D01CAD691100FD2F95 /* AppDelegate.h */,
 				003764D11CAD691100FD2F95 /* AppDelegate.m */,
 				003764D31CAD691100FD2F95 /* ViewController.h */,
 				003764D41CAD691100FD2F95 /* ViewController.m */,
+				003764E41CAD695800FD2F95 /* UIImage+GrayScale.h */,
+				003764E51CAD695800FD2F95 /* UIImage+GrayScale.m */,
+				0036ED301CAE025F001FFD0E /* sample.jpg */,
 				003764D61CAD691100FD2F95 /* Main.storyboard */,
 				003764D91CAD691100FD2F95 /* Assets.xcassets */,
 				003764DB1CAD691100FD2F95 /* LaunchScreen.storyboard */,
 				003764DE1CAD691100FD2F95 /* Info.plist */,
 				003764CD1CAD691100FD2F95 /* Supporting Files */,
 			);
+			name = "GrayByYUV&Average";
 			path = "GrayByLUV&Average";
 			sourceTree = "<group>";
 		};
@@ -82,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		003764C91CAD691100FD2F95 /* GrayByLUV&Average */ = {
+		003764C91CAD691100FD2F95 /* GrayByYUV&Average */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "GrayByLUV&Average" */;
+			buildConfigurationList = 003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "GrayByYUV&Average" */;
 			buildPhases = (
 				003764C61CAD691100FD2F95 /* Sources */,
 				003764C71CAD691100FD2F95 /* Frameworks */,
@@ -94,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = "GrayByLUV&Average";
+			name = "GrayByYUV&Average";
 			productName = "GrayByLUV&Average";
-			productReference = 003764CA1CAD691100FD2F95 /* GrayByLUV&Average.app */;
+			productReference = 003764CA1CAD691100FD2F95 /* GrayByYUV&Average.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "GrayByLUV&Average" */;
+			buildConfigurationList = 003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "GrayByYUV&Average" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				003764C91CAD691100FD2F95 /* GrayByLUV&Average */,
+				003764C91CAD691100FD2F95 /* GrayByYUV&Average */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003764DD1CAD691100FD2F95 /* LaunchScreen.storyboard in Resources */,
+				0036ED311CAE025F001FFD0E /* sample.jpg in Resources */,
 				003764DA1CAD691100FD2F95 /* Assets.xcassets in Resources */,
 				003764D81CAD691100FD2F95 /* Main.storyboard in Resources */,
 			);
@@ -150,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003764D51CAD691100FD2F95 /* ViewController.m in Sources */,
+				003764E61CAD695800FD2F95 /* UIImage+GrayScale.m in Sources */,
 				003764D21CAD691100FD2F95 /* AppDelegate.m in Sources */,
 				003764CF1CAD691100FD2F95 /* main.m in Sources */,
 			);
@@ -266,7 +277,7 @@
 				INFOPLIST_FILE = "GrayByLUV&Average/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Scyano.test.GrayByLUV-Average";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GrayByYUV&Average";
 			};
 			name = Debug;
 		};
@@ -277,14 +288,14 @@
 				INFOPLIST_FILE = "GrayByLUV&Average/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Scyano.test.GrayByLUV-Average";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GrayByYUV&Average";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "GrayByLUV&Average" */ = {
+		003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "GrayByYUV&Average" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				003764DF1CAD691100FD2F95 /* Debug */,
@@ -293,13 +304,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "GrayByLUV&Average" */ = {
+		003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "GrayByYUV&Average" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				003764E21CAD691100FD2F95 /* Debug */,
 				003764E31CAD691100FD2F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
