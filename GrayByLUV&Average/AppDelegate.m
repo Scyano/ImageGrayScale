@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  GrayByLUV&Average
 //
-//  Created by su wenjuan on 3/31/16.
+//  Created by Scyano on 3/31/16.
 //  Copyright © 2016 Scyano. All rights reserved.
 //
 
