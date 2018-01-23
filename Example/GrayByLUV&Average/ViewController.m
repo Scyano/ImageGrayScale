@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIImage+GrayScale.h"
+#import <ImageGrayScale>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *sourceImage;

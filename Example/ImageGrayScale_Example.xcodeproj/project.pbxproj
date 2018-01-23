@@ -14,7 +14,7 @@
 		003764D81CAD691100FD2F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003764D61CAD691100FD2F95 /* Main.storyboard */; };
 		003764DA1CAD691100FD2F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003764D91CAD691100FD2F95 /* Assets.xcassets */; };
 		003764DD1CAD691100FD2F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003764DB1CAD691100FD2F95 /* LaunchScreen.storyboard */; };
-		003764E61CAD695800FD2F95 /* UIImage+GrayScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 003764E51CAD695800FD2F95 /* UIImage+GrayScale.m */; };
+		CECBBFC7A06CC8D574A15795 /* libPods-ImageGrayScale_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE19655A138B7CF8BCE6402 /* libPods-ImageGrayScale_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,9 @@
 		003764D91CAD691100FD2F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		003764DC1CAD691100FD2F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003764DE1CAD691100FD2F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		003764E41CAD695800FD2F95 /* UIImage+GrayScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GrayScale.h"; sourceTree = "<group>"; };
-		003764E51CAD695800FD2F95 /* UIImage+GrayScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GrayScale.m"; sourceTree = "<group>"; };
+		2C552948DF3B0F8088B483BE /* Pods-ImageGrayScale_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGrayScale_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGrayScale_Example/Pods-ImageGrayScale_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		30D437134465A48FD6756398 /* Pods-ImageGrayScale_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGrayScale_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGrayScale_Example/Pods-ImageGrayScale_Example.release.xcconfig"; sourceTree = "<group>"; };
+		ECE19655A138B7CF8BCE6402 /* libPods-ImageGrayScale_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGrayScale_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECBBFC7A06CC8D574A15795 /* libPods-ImageGrayScale_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +51,8 @@
 			children = (
 				003764CC1CAD691100FD2F95 /* GrayByYUV&Average */,
 				003764CB1CAD691100FD2F95 /* Products */,
+				719A30BF7A257B84588E9432 /* Pods */,
+				F0D49B2591A174EBF1D19948 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +71,6 @@
 				003764D11CAD691100FD2F95 /* AppDelegate.m */,
 				003764D31CAD691100FD2F95 /* ViewController.h */,
 				003764D41CAD691100FD2F95 /* ViewController.m */,
-				003764E41CAD695800FD2F95 /* UIImage+GrayScale.h */,
-				003764E51CAD695800FD2F95 /* UIImage+GrayScale.m */,
 				0036ED301CAE025F001FFD0E /* sample.jpg */,
 				003764D61CAD691100FD2F95 /* Main.storyboard */,
 				003764D91CAD691100FD2F95 /* Assets.xcassets */,
@@ -88,22 +90,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		719A30BF7A257B84588E9432 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C552948DF3B0F8088B483BE /* Pods-ImageGrayScale_Example.debug.xcconfig */,
+				30D437134465A48FD6756398 /* Pods-ImageGrayScale_Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0D49B2591A174EBF1D19948 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECE19655A138B7CF8BCE6402 /* libPods-ImageGrayScale_Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		003764C91CAD691100FD2F95 /* GrayByYUV&Average */ = {
+		003764C91CAD691100FD2F95 /* ImageGrayScale_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "GrayByYUV&Average" */;
+			buildConfigurationList = 003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "ImageGrayScale_Example" */;
 			buildPhases = (
+				B5A09AD00F7AE3F3D00703BC /* [CP] Check Pods Manifest.lock */,
 				003764C61CAD691100FD2F95 /* Sources */,
 				003764C71CAD691100FD2F95 /* Frameworks */,
 				003764C81CAD691100FD2F95 /* Resources */,
+				DD3EF951E282647AC74324F7 /* [CP] Embed Pods Frameworks */,
+				DDCCE9581B37BD300189A5B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "GrayByYUV&Average";
+			name = ImageGrayScale_Example;
 			productName = "GrayByLUV&Average";
 			productReference = 003764CA1CAD691100FD2F95 /* GrayByYUV&Average.app */;
 			productType = "com.apple.product-type.application";
@@ -122,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "GrayByYUV&Average" */;
+			buildConfigurationList = 003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "ImageGrayScale_Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -135,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				003764C91CAD691100FD2F95 /* GrayByYUV&Average */,
+				003764C91CAD691100FD2F95 /* ImageGrayScale_Example */,
 			);
 		};
 /* End PBXProject section */
@@ -154,13 +176,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5A09AD00F7AE3F3D00703BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageGrayScale_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD3EF951E282647AC74324F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGrayScale_Example/Pods-ImageGrayScale_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDCCE9581B37BD300189A5B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGrayScale_Example/Pods-ImageGrayScale_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		003764C61CAD691100FD2F95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				003764D51CAD691100FD2F95 /* ViewController.m in Sources */,
-				003764E61CAD695800FD2F95 /* UIImage+GrayScale.m in Sources */,
 				003764D21CAD691100FD2F95 /* AppDelegate.m in Sources */,
 				003764CF1CAD691100FD2F95 /* main.m in Sources */,
 			);
@@ -272,6 +344,7 @@
 		};
 		003764E21CAD691100FD2F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C552948DF3B0F8088B483BE /* Pods-ImageGrayScale_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "GrayByLUV&Average/Info.plist";
@@ -283,6 +356,7 @@
 		};
 		003764E31CAD691100FD2F95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D437134465A48FD6756398 /* Pods-ImageGrayScale_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "GrayByLUV&Average/Info.plist";
@@ -295,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "GrayByYUV&Average" */ = {
+		003764C51CAD691100FD2F95 /* Build configuration list for PBXProject "ImageGrayScale_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				003764DF1CAD691100FD2F95 /* Debug */,
@@ -304,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "GrayByYUV&Average" */ = {
+		003764E11CAD691100FD2F95 /* Build configuration list for PBXNativeTarget "ImageGrayScale_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				003764E21CAD691100FD2F95 /* Debug */,

@@ -1,0 +1,16 @@
+PODS:
+  - ImageGrayScale (1.0.0)
+
+DEPENDENCIES:
+  - ImageGrayScale (from `../`)
+
+EXTERNAL SOURCES:
+  ImageGrayScale:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ImageGrayScale: 3ab74853a8a15292faf3db8d1c59df96ef57713a
+
+PODFILE CHECKSUM: 4e25167b232ba0b7ee92d6b509cbff9acfe3ba77
+
+COCOAPODS: 1.3.1

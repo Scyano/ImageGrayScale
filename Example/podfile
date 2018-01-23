@@ -1,0 +1,3 @@
+target 'ImageGrayScale_Example' do
+  pod 'ImageGrayScale', :path => '../'
+end
