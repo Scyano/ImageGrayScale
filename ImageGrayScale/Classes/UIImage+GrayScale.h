@@ -20,10 +20,10 @@
 /**
  *  convert jpeg to bitmap to aspectFit
  *
- *  @param image: image with suffix '.jpeg'
+ *  @param image image with suffix '.jpeg'
  *
  *  @return redrawn image.
  */
-- (instancetype)ConvertJpegImage:(UIImage *)image;
+- (instancetype)convertJpegImage:(UIImage *)image;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <ImageGrayScale>
+#import "UIImage+GrayScale.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *sourceImage;
@@ -33,6 +33,7 @@
     if (sender.selected == NO) {
         if (_effectImage.image == nil) {
             _effectImage.alpha = 0;
+            /// usage
             _effectImage.image = [_sourceImage.image convertToGrayScale];
         }
         [UIView animateWithDuration:0.5 animations:^{
