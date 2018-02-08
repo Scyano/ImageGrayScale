@@ -25,5 +25,6 @@
  *  @return redrawn image.
  */
 - (instancetype)convertJpegImage:(UIImage *)image;
+- (BOOL)justForTest;
 
 @end

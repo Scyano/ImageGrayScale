@@ -6,6 +6,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "UIImage+GrayScale.h"
 
 @interface ImageGrayScaleTests : XCTestCase
 
@@ -19,13 +20,14 @@
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
     [super tearDown];
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    printf("hello, this is test\n");
+    BOOL result = [[[UIImage alloc] init] justForTest];
+    XCTAssert(result, "you must add some unit test code here!");
 }
 
 - (void)testPerformanceExample {

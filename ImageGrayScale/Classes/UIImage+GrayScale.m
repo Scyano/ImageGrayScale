@@ -91,4 +91,10 @@
     
     return returnImage;
 }
+- (BOOL)justForTest {
+    return NO;
+}
+- (BOOL)nextTest {
+    return YES;
+}
 @end
