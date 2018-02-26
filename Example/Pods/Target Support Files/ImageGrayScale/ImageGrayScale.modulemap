@@ -1,0 +1,6 @@
+framework module ImageGrayScale {
+  umbrella header "ImageGrayScale-umbrella.h"
+
+  export *
+  module * { export * }
+}

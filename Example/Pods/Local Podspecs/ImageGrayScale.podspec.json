@@ -1,34 +1,22 @@
 {
   "name": "ImageGrayScale",
-  "version": "1.0.0",
-  "summary": "Turn a image to gray",
+  "version": "0.1.0",
+  "summary": "A short description of ImageGrayScale.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Scyano/ImageGrayScale",
+  "homepage": "https://github.com/want17475186@icloud.com/ImageGrayScale",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Scyano": "scyano@icloud.com.com"
+    "want17475186@icloud.com": "scyano@icloud.com"
   },
   "source": {
-    "git": "https://github.com/Scyano/ImageGrayScale.git",
-    "tag": "1.0.0"
+    "git": "https://github.com/want17475186@icloud.com/ImageGrayScale.git",
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ImageGrayScale/Classes/**/*",
-  "testspecs": [
-    {
-      "name": "Tests",
-      "test_type": "unit",
-      "source_files": "Tests/*",
-      "dependencies": {
-        "OCMock": [
-
-        ]
-      }
-    }
-  ]
+  "source_files": "ImageGrayScale/Classes/**/*"
 }
